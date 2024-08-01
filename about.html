@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+ .nav-link {
+            text-decoration: none;
+            color: white; /* Default link color */
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Hover and Focus styles */
+        .nav-link:hover,
+        .nav-link:focus {
+            background-color: lightgray; /* Background color on hover/focus */
+            color: black; /* Text color on hover/focus */
+            border-radius: 5px;
+        }
+
+        .nav-link.active {
+            color: rgb(255, 255, 255);
+            font-weight: bold; /* Optionally, make the active link bold */
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px; /* Adjust position of the line */
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: green; /* Color of the line */
+            border-radius: 5px;
+        }
+
+        .nav-item {
+            position: relative; /* Required for the pseudo-element to work */
+        }
+
+        .navbar-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        
+        .me{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(245, 227, 227);
+            /* margin-bottom: 20rem; */
+            text-align: center; /* Center align the heading */
+        
+
+        }
+        
+        body {
+            background-color: #f8f9fa;
+        }
+        .about-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-img {
+            border-radius: 50%;
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        .about-description {
+            text-align: center;
+            color: #333;
+        }
+        .about-title {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .about-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .skills, .knowledge {
+            margin-top: 30px;
+        }
+
+        .skills ul, .knowledge ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li, .knowledge li {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .no{
+    color: #999;
+    text-decoration: none;
+}
+.links {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5rem;
+           margin: 2%;
+        }
+
+        .contact-us {
+            margin-top: 2rem;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        .all{
+            color: #999;
+        }
+
+    </style>
+</head>
+<body style="background-color: black;">
+    <!-- logo and nav -->
+     
+   
+    <div style="display: flex; align-items: center;">
+
+        <div style="display: flex; width: 50%; justify-content: start; align-items: center;">
+            <a href="./index.html"><img src="./imgs/mylogo-removebg-preview.png" alt="" height="150rem"></a>
+        </div>
+
+        <div style="display: flex; width: 50%; justify-content: center; align-items: center;">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./study.html">Study</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+       
+   
+
+    <div class="container about-container">
+        <div class="text-center">
+            <img src="./imgs/IMG_5279-removebg-preview.png" alt="Your Photo" class="about-img">
+        </div>
+        <div class="about-description">
+            <h1 class="about-title">About Me</h1>
+            <p class="about-text">
+                Hello! I'm Sabrina Al-Barwani, a passionate Full Stack Developer with a love for creating intuitive and dynamic web applications. With a background in Software Engineering, I've honed my skills in both front-end and back-end development. I enjoy solving complex problems and building solutions that are both functional and visually appealing.
+            </p>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Proficient in Python, Java, and C#</li>
+                    <li>Experienced with front-end technologies: HTML, CSS, and JavaScript</li>
+                    <li>Skilled in AJAX for asynchronous web requests</li>
+                    <li>Familiar with XML and JSON for data interchange</li>
+                </ul>
+            </div>
+            <div class="knowledge">
+                <h2>What I Know</h2>
+                <ul>
+                    <li>Building and deploying web applications</li>
+                    <li>Understanding of MVC architecture</li>
+                    <li>API development and integration</li>
+                    <li>Version control using Git</li>
+                    <li>Database design and management</li>
+                </ul>
+            </div>
+            <p class="about-text">
+                Feel free to connect with me on Instagram <a href="https://www.instagram.com/_codepeak" target="_blank">_codepeak</a> or drop me an email at code.peak@outlook.com.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- footer contact me  -->
+    <footer>
+        <div class="links" style="margin-top: 20rem; background-color:gray; ">
+            <a href="./about.html" class="mywork">About Us</a>
+            <a href="./study.html" class="mywork">Study</a>
+            <a href="./portfolio.html" class="mywork">Portfolio</a>
+        </div>
+        <div class="contact-us" style="margin-top: 5rem;" >
+            <h1 class="all">Contact Us</h1>
+            <p class="all">123 Alkhuwair 42, Bawshar</p>
+            <div style="display: flex; align-items: center; margin-top: 4rem;">
+
+                <div style="display: flex ; justify-content:center; align-items: center; width: 100%; justify-content: space-evenly;">
+                <a href="#"> <img src="./instagram.png" alt="" srcset="" style="height: 3rem;"></a>
+                
+                <a href="#"> <img src="./social.png" alt="" srcset="" style="height: 3rem; margin-right: -1rem;"></a>
+
+                <a href="#"> <img src="./linkedin.png" alt="" srcset="" style="height: 3rem; margin-right: -0.1rem;"></a>
+
+                
+           
+                </div>
+                
+            </div>
+            <div style="display: flex; align-items: center; margin-top: 2rem;">
+                <div style="display: flex; width: 100%; align-items: center; justify-content: center; justify-content: space-evenly;">
+
+                <h4 class="all">Instagram</h4>
+                <h4 class="all">Email</h4>
+                <h4 class="all">Linkedin</h4>
+                </div>
+                
+            </div>
+            
+                <p style="margin-top: 5rem; background-color: gray; margin-bottom: 0;">@2024 Code Peak. All rights reserved.</p>
+            
+        </div>
+</footer>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+         
+    </script> 
+    <script src="./js/index.js"></script>
+</body>
+</html>
